@@ -32,8 +32,8 @@ const Sidebar = () => {
   return (
     <ul className='flex flex-col'>
       <ListItem href='/' icon='fas fa-home' name='Home' />
-      <ListItem href='/about' icon='fas fa-info-circle' name='About' />
-      <ListItem href='/contact' icon='fas fa-envelope' name='Contact' />
+      <ListItem href='/about/' icon='fas fa-info-circle' name='About' />
+      <ListItem href='/about/contact' icon='fas fa-envelope' name='Contact' />
     </ul>
   );
 };

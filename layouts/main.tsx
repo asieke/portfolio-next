@@ -6,7 +6,7 @@ type LayoutProps = {
   children: React.ReactNode;
 };
 
-const Layout = ({ children }: LayoutProps) => {
+const MainLayout = ({ children }: LayoutProps) => {
   return (
     <div className='flex flex-col h-screen'>
       <Header />
@@ -20,4 +20,4 @@ const Layout = ({ children }: LayoutProps) => {
   );
 };
 
-export default Layout;
+export default MainLayout;

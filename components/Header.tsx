@@ -25,7 +25,7 @@ const Header = () => {
           <div className='action'>
             {/* when user hovers or clicks on this then toggle the showMenu state */}
             <div className='profile' onClick={() => setShowMenu(!showMenu)}>
-              <Image src='http://shorturl.at/acMR4' width={128} height={128} alt='profile' />
+              <Image src='/images/profile.png' width={128} height={128} alt='profile' />
             </div>
             <div className={'menu' + (showMenu ? ' active' : '')}>
               <ul onClick={() => setShowMenu(false)}>
@@ -35,7 +35,7 @@ const Header = () => {
                   </Link>
                 </li>
                 <li className='list-item'>
-                  <Link href='/contact'>
+                  <Link href='/about/contact'>
                     <FcBusinessContact />
                     Contact
                   </Link>
