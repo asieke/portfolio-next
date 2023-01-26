@@ -1,0 +1,56 @@
+.privacy-policy {
+  @apply text-gray-900;
+  @apply text-justify;
+  @apply leading-5;
+  @apply text-gray-400;
+}
+
+.privacy-policy h1,
+h2 {
+  @apply text-2xl;
+  @apply text-center;
+  @apply text-gray-600;
+  @apply font-bold;
+  @apply mt-9;
+}
+
+.privacy-policy h3 {
+  @apply text-base;
+  @apply text-justify;
+  @apply text-gray-500;
+  @apply font-bold;
+  @apply mt-3;
+  @apply mb-2;
+}
+
+.privacy-policy p,
+h4,
+ul,
+li {
+  @apply text-gray-400;
+  @apply text-xs;
+  @apply text-justify;
+  @apply leading-4;
+}
+
+.privacy-policy li {
+  /* the list item should be indented (including subsequent lines) and should have a bullet */
+  @apply list-disc;
+  @apply list-inside;
+  @apply ml-4;
+}
+
+.privacy-policy h2 {
+  @apply text-4xl;
+  @apply font-bold;
+  @apply text-gray-900;
+}
+
+.privacy-policy h4 {
+  @apply text-base;
+  @apply text-center;
+  @apply text-gray-500;
+  @apply font-bold;
+  @apply mt-3;
+  @apply mb-2;
+}

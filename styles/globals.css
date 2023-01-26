@@ -3,3 +3,4 @@
 @tailwind utilities;
 
 @import './components/dropdown.css';
+@import './components/about.css';
