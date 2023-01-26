@@ -14,7 +14,7 @@ const Layout = ({ children }: LayoutProps) => {
         <div id='sidebar' className='w-48	hidden md:block bg-gray-600'>
           <Sidebar />
         </div>
-        <div className='grow bg-gray-200 p-4'>{children}</div>
+        <div className='grow bg-gray-200 p-6'>{children}</div>
       </div>
     </div>
   );
