@@ -24,7 +24,7 @@ const MainLayout = ({ children }: LayoutProps) => {
       <Header />
       <div className='flex flex-row'>
         {showSidebar && (
-          <div id='sidebar' className='w-48 md:block bg-gray-600'>
+          <div id='sidebar' className='w-48 bg-gray-700'>
             <Sidebar />
           </div>
         )}

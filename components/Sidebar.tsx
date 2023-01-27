@@ -1,28 +1,28 @@
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 
+import { FaHome, FaLock, FaAddressCard, FaChartLine } from 'react-icons/fa';
+
 //create types for hred, icon, and name
 type ListItemProps = {
   href: string;
-  icon: string;
+  icon: React.ComponentType;
   name: string;
 };
 
-const ListItem = ({ href, icon, name }: ListItemProps) => {
+const ListItem = ({ href, icon: Icon, name }: ListItemProps) => {
   const router = useRouter();
   const isActive = router.pathname === href;
+  console.log(router.pathname, href);
 
   return (
-    <li
-      className={`relative py-2 px-4 ${
-        isActive ? 'bg-indigo-600 text-white' : 'hover:bg-gray-100'
-      }`}
-    >
-      <Link href={href}>
-        <p className='flex items-center'>
-          <span className={`${icon} mr-3`}></span>
-          <span className={`${isActive ? 'text-white' : 'text-gray-800'}`}>{name}</span>
-        </p>
+    <li className='mb-2'>
+      <Link
+        href={href}
+        className='flex items-center p-2 text-base font-normal text-white rounded-lg hover:bg-gray-600'
+      >
+        <Icon />
+        <span className='ml-3 text-white'>{name}</span>
       </Link>
     </li>
   );
@@ -30,11 +30,14 @@ const ListItem = ({ href, icon, name }: ListItemProps) => {
 
 const Sidebar = () => {
   return (
-    <ul className='flex flex-col'>
-      <ListItem href='/' icon='fas fa-home' name='Home' />
-      <ListItem href='/about/' icon='fas fa-info-circle' name='About' />
-      <ListItem href='/about/contact' icon='fas fa-envelope' name='Contact' />
-    </ul>
+    <div className='h-full px-3 py-4 overflow-y-auto'>
+      <ul className='space-y-2'>
+        <ListItem href='/' icon={FaChartLine} name='Home' />
+        <ListItem href='/about' icon={FaHome} name='About' />
+        <ListItem href='/about/contact' icon={FaAddressCard} name='Contact' />
+        <ListItem href='/about/privacy' icon={FaLock} name='Privacy' />
+      </ul>
+    </div>
   );
 };
 
