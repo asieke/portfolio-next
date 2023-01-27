@@ -20,15 +20,17 @@ const MainLayout = ({ children }: LayoutProps) => {
   }
 
   return (
-    <div className='flex flex-col min-h-screen'>
+    <div className='flex flex-col pt-16 bg-gray-200'>
       <Header />
-      <div className='flex flex-row h-full'>
+      <div className='flex flex-row'>
         {showSidebar && (
-          <div id='sidebar' className='w-48	hidden md:block bg-gray-600'>
+          <div id='sidebar' className='w-48 md:block bg-gray-600'>
             <Sidebar />
           </div>
         )}
-        <div className='grow bg-gray-200 p-6'>{children}</div>
+        <div className='grow bg-gray-200 p-6' style={{ minHeight: 'calc(100vh - 64px)' }}>
+          {children}
+        </div>
       </div>
     </div>
   );

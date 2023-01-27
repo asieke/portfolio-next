@@ -12,13 +12,13 @@ const Header = () => {
   const [showMenu, setShowMenu] = useState(false);
   console.log(showMenu);
   return (
-    <nav className='bg-gray-900 p-4 sm:px-4 text-white h-16'>
+    <nav className='fixed top-0 bg-slate-800 h-16 w-full z-50'>
       {/* create two sections, one justified left and one justified right */}
       <div className='flex justify-between'>
         {/* left section */}
         <div className='flex space-x-4'>
           {/* logo */}
-          logo
+          <h1>Portfolio Labs</h1>
         </div>
         {/* right section */}
         <div className='flex space-x-4'>

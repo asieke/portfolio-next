@@ -2,9 +2,9 @@
 
 const Privacy = () => {
   return (
-    <div className='privacy-policy w-full md:w-1/2 sm:w-4/5 mx-auto'>
-      <h2>I. Privacy Policy</h2>
-      <h4>Last Updated: January 26, 2023</h4>
+    <div className='privacy-policy'>
+      <h1>Privacy Policy</h1>
+      <h2>Last Updated: January 26, 2023</h2>
       <p>
         This privacy policy (&quot;Policy&quot;) describes how predict.exchange
         (&quot;predict.exchange&quot;, &quot;we&quot;, &quot;us&quot; or &quot;our&quot;) collects,
@@ -16,14 +16,14 @@ const Privacy = () => {
         access and update this information. This Policy does not apply to the practices of companies
         that we do not own or control, or to individuals that we do not employ or manage.
       </p>
-      <h1>Introduction</h1>
-      <h3>A. Purpose of the privacy policy</h3>
+      <h3>I. Introduction</h3>
+      <h4>A. Purpose of the privacy policy</h4>
       <p>
         The purpose of this privacy policy is to inform users of the website about how their
         personal information is collected, used, and protected. We are committed to ensuring the
         privacy and security of our users&apos; information.
       </p>
-      <h3>B. Description of the website and its services</h3>
+      <h4>B. Description of the website and its services</h4>
       <p>
         Our website connects a user&apos;s financial accounts into a single dashboard and gives them
         insights into how they can better manage their assets, tax loss harvest, direct index, and
@@ -31,7 +31,7 @@ const Privacy = () => {
         financial information in one place, making it easier to track their investments and make
         informed decisions.
       </p>
-      <h3>C. Types of personal information collected</h3>
+      <h4>C. Types of personal information collected</h4>
       <p>
         In order to provide our services, we collect certain personal information from our users.
         This includes, but is not limited to, information such as name, email address, financial
@@ -40,23 +40,23 @@ const Privacy = () => {
         with the user about our services.
       </p>
 
-      <h1>II. Definitions</h1>
-      <h3>a. Personal Information</h3>
+      <h3>II. Definitions</h3>
+      <h4>a. Personal Information</h4>
       <p>
         Personal information refers to any information that can be used to identify an individual,
         including but not limited to name, email address, financial account information, and login
         credentials.
       </p>
-      <h3>b. User</h3>
+      <h4>b. User</h4>
       <p>A user refers to any individual who uses the website and its services.</p>
-      <h3>c. Data Controller</h3>
+      <h4>c. Data Controller</h4>
       <p>
         A data controller refers to the entity that determines the purposes and means of processing
         personal information.
       </p>
 
-      <h1>III. Data Collection</h1>
-      <h3>a. Types of information collected</h3>
+      <h3>III. Data Collection</h3>
+      <h4>a. Types of information collected</h4>
       <p>
         Our website collects a variety of personal information from users in order to provide them
         with the best possible experience and insights. This information includes, but is not
@@ -70,7 +70,7 @@ const Privacy = () => {
         <li>Information related to the user&apos;s investment goals and risk tolerance.</li>
         <li>Contact information such as name, email address, and phone number.</li>
       </ul>
-      <h3>b. How information is collected</h3>
+      <h4>b. How information is collected</h4>
       <p>We collect personal information from users in several ways, including:</p>
       <ul>
         <li>When users sign up for an account on our website.</li>
@@ -83,7 +83,7 @@ const Privacy = () => {
           Through cookies and other tracking technologies when users interact with our website.
         </li>
       </ul>
-      <h3>c. How information is safeguarded</h3>
+      <h4>c. How information is safeguarded</h4>
       <p>
         We take the protection of personal information very seriously and have implemented a variety
         of security measures to safeguard this information. These measures include:
@@ -108,8 +108,8 @@ const Privacy = () => {
         liable for any unauthorized access or use of personal information.
       </p>
 
-      <h1>IV. Use of Information</h1>
-      <h3>a. How information is used</h3>
+      <h3>IV. Use of Information</h3>
+      <h4>a. How information is used</h4>
       <p>
         Personal information collected from users of our website is used to provide and improve our
         services. We may use your personal information to:
@@ -123,7 +123,7 @@ const Privacy = () => {
           services
         </li>
       </ul>
-      <h3>b. Who information is shared with</h3>
+      <h4>b. Who information is shared with</h4>
       <p>We may share your personal information with:</p>
       <ul>
         <li>
@@ -132,37 +132,37 @@ const Privacy = () => {
         </li>
         <li>Government authorities or other third parties as required by law</li>
       </ul>
-      <h3>c. Who information is not shared with</h3>
+      <h4>c. Who information is not shared with</h4>
       <p>
         We will not share your personal information with any third parties for their own marketing
         or promotional purposes without your explicit consent.
       </p>
       <p>We will not sell or rent your personal information to third parties.</p>
 
-      <h1>V. User Rights</h1>
-      <h3>a. Accessing Personal Information</h3>
+      <h3>V. User Rights</h3>
+      <h4>a. Accessing Personal Information</h4>
       <p>
         Our company respects the user&apos;s right to access their personal information. If a user
         would like to access their personal information, they can do so by contacting us at [insert
         contact information here]. We will provide the user with a copy of their personal
         information within a reasonable timeframe.
       </p>
-      <h3>b. Making Changes to Personal Information</h3>
+      <h4>b. Making Changes to Personal Information</h4>
       <p>
         Our company respects the user&apos;s right to make changes to their personal information. If
         a user would like to make changes to their personal information, they can do so by
         contacting us at [insert contact information here]. We will make the necessary changes
         within a reasonable timeframe.
       </p>
-      <h3>c. Opting Out of Data Collection</h3>
+      <h4>c. Opting Out of Data Collection</h4>
       <p>
         Our company respects the user&apos;s right to opt out of data collection. If a user would
         like to opt out of data collection, they can do so by contacting us at [insert contact
         information here]. We will implement the opt-out request within a reasonable timeframe.
       </p>
 
-      <h1>VI. Data Retention</h1>
-      <h3>a. How long information is retained</h3>
+      <h3>VI. Data Retention</h3>
+      <h4>a. How long information is retained</h4>
       <p>
         The personal information collected from users will be retained for as long as necessary to
         provide the services requested by the user, or as required by applicable laws. This includes
@@ -170,7 +170,7 @@ const Privacy = () => {
         credentials. Once the user terminates their account, or requests that their information be
         deleted, we will take reasonable steps to delete the information from our systems.
       </p>
-      <h3>b. How information is disposed of</h3>
+      <h4>b. How information is disposed of</h4>
       <p>
         When disposing of personal information, we will take reasonable measures to protect against
         unauthorized access to or use of the information in transit or in storage. This may include
@@ -179,8 +179,8 @@ const Privacy = () => {
         properly disposed of.
       </p>
 
-      <h1>VII. Security</h1>
-      <h3>a. Description of security measures</h3>
+      <h3>VII. Security</h3>
+      <h4>a. Description of security measures</h4>
       <p>
         The security of our user&apos;s personal information is of the utmost importance to us. We
         have implemented a variety of technical and organizational measures to protect user&apos;s
@@ -200,7 +200,7 @@ const Privacy = () => {
         personal information to implement appropriate security measures and comply with all
         applicable laws and regulations.
       </p>
-      <h3>b. Breach notification</h3>
+      <h4>b. Breach notification</h4>
       <p>
         In the event of a data breach, we will promptly notify affected users and any applicable
         regulatory bodies in accordance with all applicable laws and regulations. We will also take
@@ -208,8 +208,8 @@ const Privacy = () => {
         prevent similar incidents from occurring in the future.
       </p>
 
-      <h1>VIII. Third-Party Links</h1>
-      <h3>a. Description of Third-Party Links</h3>
+      <h3>VIII. Third-Party Links</h3>
+      <h4>a. Description of Third-Party Links</h4>
       <p>
         Our website uses Plaid to connect users&apos; financial accounts to our platform. By using
         our website, you agree to the sharing of your financial account information with Plaid for
@@ -217,7 +217,7 @@ const Privacy = () => {
         limited to, account numbers, account balances, transaction history, and other financial
         data.
       </p>
-      <h3>b. Responsibility for Third-Party Links</h3>
+      <h4>b. Responsibility for Third-Party Links</h4>
       <p>
         We are not responsible for the privacy practices of any third-party links or services that
         may be accessed through our website. We encourage you to read the privacy policies of any
@@ -226,8 +226,8 @@ const Privacy = () => {
         services provided by any third-party links or services.
       </p>
 
-      <h1> IX. Changes to Privacy Policy </h1>
-      <h3>a. How changes to Privacy Policy are communicated</h3>
+      <h3> IX. Changes to Privacy Policy </h3>
+      <h4>a. How changes to Privacy Policy are communicated</h4>
       <p>
         We may update this Privacy Policy from time to time to reflect changes in our practices or
         services. If we make any material changes to this Privacy Policy, we will provide notice of
@@ -236,7 +236,7 @@ const Privacy = () => {
         periodically to stay informed about our collection, use, and disclosure of your personal
         information.
       </p>
-      <h3>b. Responsibility for updated Privacy Policy</h3>
+      <h4>b. Responsibility for updated Privacy Policy</h4>
       <p>
         By accessing or using our website or services after we have posted a notice of changes to
         this Privacy Policy or have provided you with notice of such changes, you are deemed to have
@@ -244,8 +244,8 @@ const Privacy = () => {
         the website or services.
       </p>
 
-      <h1>X. Contact Information</h1>
-      <h3>a. How to contact website with questions or complaints</h3>
+      <h3>X. Contact Information</h3>
+      <h4>a. How to contact website with questions or complaints</h4>
       <p>
         If you have any questions or concerns about this privacy policy or the way in which we
         handle your personal information, please contact us at:
