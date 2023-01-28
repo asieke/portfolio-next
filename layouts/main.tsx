@@ -15,20 +15,20 @@ const MainLayout = ({ children }: LayoutProps) => {
 
   let showSidebar = true;
   //if pathname contains privacy then do not show sidebar
-  if (pathname.includes('privacy')) {
+  if (pathname.includes('privacy') || pathname.includes('signin')) {
     showSidebar = false;
   }
 
   return (
-    <div className='flex flex-col pt-16 bg-gray-200'>
+    <div className='flex flex-col bg-gray-200 dark'>
       <Header />
-      <div className='flex flex-row'>
+      <div className='flex flex-row mt-[60px]'>
         {showSidebar && (
           <div id='sidebar' className='w-48 bg-gray-700'>
             <Sidebar />
           </div>
         )}
-        <div className='grow bg-gray-200 p-6' style={{ minHeight: 'calc(100vh - 64px)' }}>
+        <div className='grow bg-gray-200 p-6' style={{ minHeight: 'calc(100vh - 60px)' }}>
           {children}
         </div>
       </div>
