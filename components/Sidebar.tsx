@@ -19,10 +19,10 @@ const ListItem = ({ href, icon: Icon, name }: ListItemProps) => {
     <li className='mb-2'>
       <Link
         href={href}
-        className='flex items-center p-2 text-base font-normal text-white rounded-lg hover:bg-gray-600'
+        className='flex items-center p-2 text-gray-200 rounded-lg hover:bg-gray-600'
       >
         <Icon />
-        <span className='ml-3 text-white'>{name}</span>
+        <span className='ml-2 text-gray-200 text-sm font-normal'>{name}</span>
       </Link>
     </li>
   );

@@ -1,6 +1,7 @@
 //create a type for children
 import Sidebar from '@/components/Sidebar';
 import Header from '@/components/Header';
+import Footer from '@/components/Footer';
 import { useRouter } from 'next/router';
 
 type LayoutProps = {
@@ -28,10 +29,11 @@ const MainLayout = ({ children }: LayoutProps) => {
             <Sidebar />
           </div>
         )}
-        <div className='grow bg-gray-200 p-6' style={{ minHeight: 'calc(100vh - 60px)' }}>
+        <div className='grow bg-gray-200 p-6' style={{ minHeight: 'calc(100vh - 120px)' }}>
           {children}
         </div>
       </div>
+      <Footer />
     </div>
   );
 };
