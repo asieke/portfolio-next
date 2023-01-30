@@ -8,14 +8,8 @@ const Header = () => {
   return (
     <Navbar fluid={true} className='fixed w-full'>
       <Link href='/' className='flex'>
-        <Image
-          src='https://flowbite.com/docs/images/logo.svg'
-          className='h-6 sm:h-9 mr-1'
-          alt='Flowbite Logo'
-          width={48}
-          height={48}
-        />
-        <span className='self-center whitespace-nowrap text-xl font-semibold dark:text-white'>
+        <Image src='/images/logo.png' alt='Portfolio Lab Logo' width={42} height={42} />
+        <span className='self-center ml-1 whitespace-nowrap text-xl font-semibold dark:text-white'>
           Portfolio Lab
         </span>
       </Link>
