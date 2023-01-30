@@ -5,31 +5,22 @@ import Link from 'next/link';
 import { useSession, signIn, signOut } from 'next-auth/react';
 
 import dynamic from 'next/dynamic';
-const SignUpModal = dynamic(() => import('./modals/SignUpModal'), {
-  ssr: false,
-});
 const SignInModal = dynamic(() => import('./modals/SignInModal'), {
   ssr: false,
 });
 
 const HeaderProfile = () => {
-  const [modal, setModal] = useState(0);
+  const [modal, setModal] = useState(false);
   const { data: session } = useSession();
 
-  console.log(session);
   return (
     <>
       <SignInModal
-        show={modal === 1}
-        onSignupClick={() => setModal(2)}
+        show={modal}
         onGoogleClick={() => signIn('google')}
-        onClose={() => setModal(0)}
+        onClose={() => setModal(false)}
       />
-      <SignUpModal
-        show={modal === 2}
-        onClose={() => setModal(0)}
-        onGoogleClick={() => signIn('google')}
-      />
+
       {session && session.user ? (
         <>
           <div className='flex md:order-2'>
@@ -71,8 +62,7 @@ const HeaderProfile = () => {
         </>
       ) : (
         <div className='flex flex-wrap gap-2'>
-          <Button onClick={() => setModal(1)}>Sign in</Button>
-          <Button onClick={() => setModal(2)}>Sign up</Button>
+          <Button onClick={() => setModal(true)}>Log in</Button>
         </div>
       )}
     </>
