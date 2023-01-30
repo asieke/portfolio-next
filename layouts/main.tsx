@@ -16,7 +16,7 @@ const MainLayout = ({ children }: LayoutProps) => {
 
   let showSidebar = true;
   //if pathname contains privacy then do not show sidebar
-  if (pathname.includes('privacy') || pathname.includes('signin')) {
+  if (pathname.includes('privacy') || pathname.includes('signin') || pathname.includes('terms')) {
     showSidebar = false;
   }
 
