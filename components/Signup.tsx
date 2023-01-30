@@ -3,13 +3,12 @@ import { Modal } from 'flowbite-react';
 import { GoogleIcon } from './svg/GoogleIcon';
 
 //create prop type for onClose which is a function that returns void
-type SigninProps = {
+type SignupProps = {
   onClose: () => void;
-  onSignupClick: () => void;
   show: boolean;
 };
 
-const Signin = ({ onClose, onSignupClick, show }: SigninProps) => {
+const Signin = ({ onClose, show }: SignupProps) => {
   return (
     <>
       <Modal show={show} size='md' popup={true} onClose={onClose}>
@@ -20,17 +19,7 @@ const Signin = ({ onClose, onSignupClick, show }: SigninProps) => {
               aria-label='Login to your account'
               className='text-2xl font-extrabold leading-6 text-gray-800'
             >
-              Sign to your account
-            </p>
-            <p className='text-sm mt-4 font-medium leading-none text-gray-500'>
-              Dont have account?{' '}
-              <span
-                aria-label='Sign up here'
-                className='text-sm font-medium leading-none underline text-gray-800 cursor-pointer'
-                onClick={onSignupClick}
-              >
-                Sign up here
-              </span>
+              Sign up for a new Account
             </p>
             <button
               aria-label='Continue with google'
@@ -72,7 +61,7 @@ const Signin = ({ onClose, onSignupClick, show }: SigninProps) => {
                 aria-label='create my account'
                 className='focus:ring-2 focus:ring-offset-2 focus:ring-indigo-700 text-sm font-semibold leading-none text-white focus:outline-none bg-indigo-700 border rounded hover:bg-indigo-600 py-4 w-full'
               >
-                Sign in
+                Create my account
               </button>
             </div>
           </div>
