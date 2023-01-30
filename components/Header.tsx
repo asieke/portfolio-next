@@ -1,7 +1,8 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import { Navbar } from 'flowbite-react';
 
-import { Navbar, Dropdown, Avatar } from 'flowbite-react';
+import HeaderProfile from './HeaderProfile';
 
 const Header = () => {
   return (
@@ -18,37 +19,7 @@ const Header = () => {
           Portfolio Lab
         </span>
       </Link>
-      <div className='flex md:order-2'>
-        <Dropdown
-          arrowIcon={false}
-          inline={true}
-          label={
-            <Avatar alt='User settings' img='/images/profile.png' bordered={true} rounded={true} />
-          }
-        >
-          <Dropdown.Header>
-            <span className='block text-sm'>Bonnie Green</span>
-            <span className='block truncate text-sm font-medium'>name@flowbite.com</span>
-          </Dropdown.Header>
-          <Dropdown.Item>Dashboard</Dropdown.Item>
-          <Dropdown.Item>Settings</Dropdown.Item>
-          <Dropdown.Item>Earnings</Dropdown.Item>
-          <Dropdown.Divider />
-          <Dropdown.Item>Sign out</Dropdown.Item>
-        </Dropdown>
-        <Navbar.Toggle />
-      </div>
-      <Navbar.Collapse>
-        <Link href='/' className='text-white hover:text-gray-400'>
-          Home
-        </Link>
-        <Link href='/about' className='text-white hover:text-gray-400'>
-          About
-        </Link>
-        <Link href='/about/privacy' className='text-white hover:text-gray-400'>
-          Privacy
-        </Link>
-      </Navbar.Collapse>
+      <HeaderProfile />
     </Navbar>
   );
 };
